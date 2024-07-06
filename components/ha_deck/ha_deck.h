@@ -20,8 +20,8 @@ public:
     void add_screen(HaDeckScreen *screen);
     void switch_screen(std::string name);
     void add_on_inactivity_change_callback(std::function<void(bool)> &&callback);
-    void set_inactivity(bool value);
 private:
+    void set_inactivity_(bool value);
     void create_inactivity_screen_();
 
     const char *TAG = "HA_DECK";
